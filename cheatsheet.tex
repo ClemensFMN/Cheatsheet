@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[a4paper,margin=0.51in,landscape]{geometry}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb, amsthm}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{tabularx}
+
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arctanh}{arctanh}
+
+
+\begin{document}
+\begin{multicols}{2}
+
+\begin{align*}
+  \sin(a+b) &=  \sin a \cos b + \cos a \sin b \\
+  \sin 2a &= 2 \sin a \cos b \\
+  \cos(a+b) &= \cos a \cos b - \sin a \sin b \\
+  \cos 2a &= \cos^2 a - \sin^2 a
+\end{align*}
+
+\hrule
+
+\vspace*{0mm}
+
+\begin{align*}
+  \sin a \sin b &= \frac{1}{2} \left[ \cos(a-b)  - \cos(a + b) \right] \\
+  \sin a \cos b &= \frac{1}{2} \left[ \sin(a+b)  + \sin(a - b) \right] \\
+  \cos a \cos b &= \frac{1}{2} \left[ \cos(a+b)  + \cos(a - b) \right] \\
+  \sin^2 a &= \frac{1}{2} \left(1 - \cos 2a \right) \quad \cos^2 a = \frac{1}{2} \left( 1 + \cos 2a \right)
+\end{align*}
+
+\hrule
+
+\begin{align*}
+  (\sin x)' = \cos x & \quad \int \sin(x) dx = \sin x \\
+  (\cos x)' = -\sin x & \quad \int \cos(x) dx = - \cos x \\
+  (\tan x)' = 1 + \tan^2 x & \quad \int \tan x dx  = - \ln \cos x
+\end{align*}
+
+\hrule
+
+\vspace*{2mm}
+
+\begin{equation*}
+  (\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}, \quad (\arccos x)' = -\frac{1}{\sqrt{1 - x^2}}
+\end{equation*}
+
+\vspace*{0mm}
+
+\begin{equation*}
+  (\arctan x)' = \frac{1}{1+x^2}
+\end{equation*}
+
+\hrule
+
+\vspace*{2mm}
+
+\begin{equation*}
+  (\arcsinh x)' = \frac{1}{\sqrt{1 + x^2}}, \quad (\arccosh x)' = \frac{1}{\sqrt{x^2 - 1}}
+\end{equation*}
+
+\vspace*{0mm}
+
+\begin{equation*}
+  (\arctanh x)' = \frac{1}{1-x^2}
+\end{equation*}
+
+\begin{align*}
+  a \sin x + b \cos x & = A \cos(x + \alpha) = A \left( \cos x \cos \alpha - \sin x \sin \alpha \right) \\
+  A^2 & = a^2 + b^2 , \quad \tan \alpha = - \frac{a}{b}
+\end{align*}
+
+\pagebreak
+
+% \lipsum[1-10]
+
+\end{multicols}
+
+\end{document}
